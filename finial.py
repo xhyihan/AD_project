@@ -44,7 +44,7 @@ def create_3d_cnn_model(width, height, depth, num_classes):
     
     return model
 
-model = create_3d_cnn_model(64, 64, 64, num_classes=2)  # num_classes=2 --> binary classification
+model = create_3d_cnn_model(64, 64, 64, num_classes=3)  # num_classes=2 --> binary classification
 
 # Load and preprocess an MRI image
 def preprocess_and_extract_features_batch(file_paths, model):
